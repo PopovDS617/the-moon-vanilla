@@ -47,7 +47,7 @@ function addStar() {
 
 Array(100).fill().forEach(addStar);
 
-const moonTexture = new THREE.TextureLoader().load('./public/moon.jpg');
+const moonTexture = new THREE.TextureLoader().load('./public/img/moon.jpg');
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(5, 100, 100),
@@ -62,7 +62,9 @@ moon.position.z = 10;
 
 scene.add(moon);
 
-const spaceBackground = new THREE.TextureLoader().load('.public/space2.jpg');
+const spaceBackground = new THREE.TextureLoader().load(
+  './public/img/space2.jpg'
+);
 scene.background = spaceBackground;
 
 function animate() {
