@@ -68,7 +68,7 @@ scene.background = spaceBackground;
 function animate() {
   requestAnimationFrame(animate);
 
-  moon.rotation.y += 0.001;
+  moon.rotation.y += 0.0007;
 
   // controls.update();
   renderer.render(scene, camera);
